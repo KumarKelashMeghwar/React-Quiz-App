@@ -1,11 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Flags from "./Flags/Flags";
+import TodoList from "./Todo App/TodoList";
 
 function App() {
   return (
     <>
-      <Flags />
+      <TodoList />
     </>
   );
 }

@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #eee;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  width: 450px;
+  border-radius: 10px;
+  height: 500px;
+  background-color: rgb(59, 150, 202);
+  overflow-y: scroll;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: orchid;
+}
+
+.main button {
+  padding: 2px 23px;
+  cursor: pointer;
+  border: none;
+  background-color: palegreen;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 36px;
+  outline: none;
+}
+
+.main input {
+  width: 250px;
+  height: 38px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-size: 22px;
+  padding-right: 10px;
+}
