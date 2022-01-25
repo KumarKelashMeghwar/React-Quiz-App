@@ -1,0 +1,108 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #eee;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  width: 500px;
+  border-radius: 10px;
+  height: 500px;
+  background-color: rgb(17, 61, 87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.question {
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+  letter-spacing: 0.6px;
+  font-size: 24px;
+}
+
+.btns_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 50px 0;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 130px;
+  letter-spacing: 0.5px;
+  height: 80px;
+  background-color: orchid;
+  border-radius: 10px;
+  margin: 20px;
+  font-size: 20px;
+  transition: background-color 0.8s ease;
+}
+
+.btn:hover {
+  background-color: aquamarine;
+}
+
+.next_btn {
+  background-color: chocolate;
+  width: 160px;
+  color: #fff;
+  height: 60px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 130px;
+  letter-spacing: 0.5px;
+  height: 80px;
+  border-radius: 10px;
+  margin: 20px;
+  font-size: 20px;
+  transition: background-color 0.8s ease;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 300px;
+  }
+
+  .btns_container {
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 0;
+  }
+
+  .btn {
+    width: 110px;
+    height: 70px;
+  }
+
+  .question {
+    margin-top: 0;
+    font-size: 20px;
+  }
+}
+
+.next_btn:hover {
+  background-color: green;
+}
+
+/* Hiding certain elements */
+
+.question.hide {
+  display: none;
+}
+
+.btns_container.hide {
+  display: none;
+}
+
+.next_btn.hide {
+  display: none;
+}
